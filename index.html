@@ -21,10 +21,69 @@
             </nav>
             <div class="header-text">
               <p>Student Major in Data Science</p>
-              <h1><span>Gema</span>Khusnul Ma'rifah</h1>
+              <h1><span>Gema</span><br>Khusnul Ma'rifah</h1>
             </div>
         </div>
     </div>
+<!---------------about---------------->    
+      <div id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Gema.jpg"> 
+          </div>
+          <div class="about-col-2"></div>
+            <h1 class="subtitle">About Me</h1>
+            <p>5th semester college students with a Bachelor's Degree in Data Science focused on the field of data analysis who have an understanding of database systems, primarily using MySQL, Accustomed to using the Python programming language to help analyze data. Highly experienced in leadership skills by being a part of the Data Science Student Association.</p>
+            <div class="tabtitle">
+              <p class="tablink activelink" onclick="opentab('project')">College Project</p>
+              <p class="tablink" onclick="opentab('certification')">Certifications</p>
+              <p class="tablink" onclick="opentab('publication')">Publication</p>
+            </div>
+            <div class="tabcontent activetab" id="project">
+              <ul>
+                <li><span>2023</span>
+                  <br> * Analysis Of Public Sentiment On Coldplay Concerts In Indonesia Using PySpark With A Logistic Regression Algorithm
+                  <br> * Clusterization Of Flood-Prone Areas In DKI Jakarta Province Using Hierarchical Clustering Method
+                  <br> * Comparison of the Naïve Bayes, K-Nearest Neighbor, and Support Vector Machine Methods in Breast Cancer 
+Classification
+                  <br> * Motor Vehicle Clusterization In East Java Using the DBSCAN Method
+                </li>
+                <li><span>2022</span>
+                  <br> * Comparison of MySQL Workbench Database Performance with MongoDB on Zoo Database
+                  <br> * January Temperature Prediction Model In Sidoarjo District Using Multiple Linear Regression
+                  <br> * Review On The Detection And Recognition Of Emotions From Text Using NLP
+                </li>
+                <li><span>2021</span><br>Gas and Smoke Detector with IoT Technology</li>
+              </ul>
+            </div>
+            <div class="tabcontent" id="certification">
+              <ul>
+                <li><span>2022</span><br>Competition East Java Data Hackathon 2022</li>
+              </ul>
+            </div>
+            <div class="tabcontent" id="publication">
+              <ul>
+                <li><span>2022</span><br>Seminar Nasional Sains Data 2022 (SENADA 2022): Tweet Text Modeling on the Issue of Sexual Harassment 
+Based on Sentiment Analysis and Emotional Lexicon</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tablink");
+      var tabContents = document.getElementsByClassName("tabcontent");
+      
+      function opentab(tabname){
+      	for(tabLink of tabLinks){
+      		tabLink.classList.remove("activelink");
+      	}
+      	for(tabContent of tabContents){
+      		tabContent.classList.remove("activetab");
+      	}
+      }
+    </script>
 </body>
 
 </html>
