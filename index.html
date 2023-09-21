@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/">
     <title>Gema Portfolio Website</title>
 </head>
 
@@ -30,7 +30,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/Gema.jpg"> 
+            <img src="images/Gema.jpg">
           </div>
           <div class="about-col-2"></div>
             <h1 class="subtitle">About Me</h1>
@@ -71,6 +71,47 @@ Based on Sentiment Analysis and Emotional Lexicon</li>
         </div>
       </div>
     </div>
+<!---------------portfolio----------------> 
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">Portfolio</h1>
+        <div class="portfolio-list">
+          <div>
+            <h2>Analysis Of Public Sentiment On Coldplay Concerts In Indonesia Using PySpark With A Logistic Regression Algorithm</h2>
+            <p>This project is trying to get a sentiment analysis about Coldplay concerts in Indonesia by using PySpark with a Logistic Regression Algorithm. The dataset is from crawling comments on YouTube that have a topic about Coldplay concerts in Indonesia.</p>
+          </div>
+          <div>
+            <h2>Clusterization Of Flood-Prone Areas In DKI Jakarta Province Using Hierarchical Clustering Method</h2>
+            <p>This project is making a clusterization of flood-prone areas in DKI Jakarta using the hierarchical clustering method, and the output from this project is a dashboard that shows a bar chart about fatalities by administrative city, a line chart about fatalities by sub-district, and clustering in the form of a map showing the level of flood vulnerability in each sub-district.</p>
+          </div>
+          <div>
+            <h2>Comparison of the Naïve Bayes, K-Nearest Neighbor, and Support Vector Machine Methods in Breast Cancer 
+Classification</h2>
+            <p>This project uses a breast cancer dataset and tries to classify it with three different models: Naïve Bayes, K-Nearest Neighbor, and Support Vector Machine. The things that get compared in this project are the confusion matrix (true positive, false negative, false positive, and true negative) and the classification report (precision, recall, f1-score, and support).</p>
+          </div>
+          <div>
+            <h2>Motor Vehicle Clusterization In East Java Using the DBSCAN Method</h2>
+            <p>This project uses a dataset about the number of motorized vehicles registered by district or city and type of vehicle in East Java Province in 2018–2020 and is trying to cluster using the DBSCAN method to find a pattern or trend to see the different or the same pattern based on a total number of vehicles per year.</p>
+          </div>
+          <div>
+            <h2>Comparison of MySQL Workbench Database Performance with MongoDB on Zoo Database</h2>
+            <p>This project is about trying to get a comparison of database performance between MySQL Workbench and MongoDB. The things that are compared are GUI, CRUD comparison, Relational Based on Type of Database, and Query Performance Comparison.</p>
+          </div>
+          <div>
+            <h2>January Temperature Prediction Model In Sidoarjo District Using Multiple Linear Regression</h2>
+            <p>This project is trying to get a January temperature prediction model in Sidoarjo using multiple linear regression. Analysis using SPSS and manual calculation based on multiple linear regression.</p>
+          </div>
+          <div>
+            <h2>Review On The Detection And Recognition Of Emotions From Text Using NLP</h2>
+            <p>This project's result is the detection and recognition of emotion in text. This project uses data about gender equality, feminism, and sexual violence from Twitter. The data went through preprocessing and then classification using Naïve Bayes classification and recognition of emotions using NRClex. Visualization data in this project using histogram, pie chart, and wordcloud.</p>
+          </div>
+          <div>
+            <h2>Gas and Smoke Detector with IoT Technology</h2>
+            <p>This project is using ThingSpeak, Arduino IDE 1.8.16, and Telegram. This project tests smoke, LPG gas, and CO gas with three tests each over different distances. This equipment will test out all of the gas and notify users using a buzzer and telegram if there is anything abnormal with the neighborhood using the data gathered in real time in ThingSpeak.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       var tabLinks = document.getElementsByClassName("tablink");
       var tabContents = document.getElementsByClassName("tabcontent");
@@ -82,7 +123,10 @@ Based on Sentiment Analysis and Emotional Lexicon</li>
       	for(tabContent of tabContents){
       		tabContent.classList.remove("activetab");
       	}
+      	event.currentTarget.classList.add("activelink");
+      	document.getElementById(tabname).classList.add("activetab);
       }
+      
     </script>
 </body>
 

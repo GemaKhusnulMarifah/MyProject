@@ -127,3 +127,31 @@ nav ul li a:hover::after{
 .tabcontent.activetab{
   display: block;
 }
+
+/*---------------portfolio----------------*/
+#portfolio{
+  padding: 30px 0;
+}
+.portfolio-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.portfolio-list div{
+  background: rgb(87, 111, 114);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.portfolio-list h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.portfolio-list div:hover{
+  background: rgb(240, 235, 227);
+  transform: translateY(-10px);
+}
