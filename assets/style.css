@@ -156,55 +156,96 @@ nav ul li a:hover::after{
   transform: translateY(-10px);
 }
 /*---------------contact----------------*/
-.contact-left{
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.contact-left {
   flex-basis: 35%;
 }
-.contact-right{
-  flex-basis: 60%;
+
+.contact-left p {
+  margin-top: 20px;
+  color: rgb(240, 235, 227); 
+  font-size: 18px;
 }
-.contact-left p{
-  margin-top: 30px;
+
+.contact-left p i {
+  color: rgb(87, 111, 114); 
+  margin-right: 10px; 
+  font-size: 24px;
 }
-.contact-left p i{
-  color: rgb(87, 111, 114);
-  margin-right: 15px;
-  font-size:25px;
+
+.social-icons {
+  margin-top: 20px;
 }
-.social-icons{
-  margin-top: 30px;
-}
-.social-icons a{
+
+.social-icons a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   margin-right: 15px;
-  color: rgb(87, 111, 114);
+  color: rgb(87, 111, 114); 
   display: inline-block;
-  transition: transform 0.5s;
+  transition: transform 0.3s ease-in-out;
 }
-.social-icons a:hover{
-  color: rgb(87, 111, 114);
+
+.social-icons a:hover {
+  color: rgb(87, 111, 114); 
   transform: translateY(-5px);
 }
-.btn.btn2{
+
+.btn.btn2 {
   display: inline-block;
-  background: rgb(228, 220, 207);
-}
-.contact-right form{
-  width: 100%;
-}
-form input, form textarea{
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: rgb(240, 235, 227);
-  padding: 15px 0;
+  padding: 10px 15px; 
+  font-size: 18px;
+  background-color: rgb(228, 220, 207);
   color: rgb(87, 111, 114);
-  font-size: 18px;
-  border-radius: 6px;
-}
-form btn2{
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 20px;
+  border: 1px solid rgb(87, 111, 114); 
+  border-radius: 5px; 
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn.btn2:hover {
+  transform: translateY(-3px);
+}
+
+.contact-right {
+  flex-basis: 60%;
+  background-color: rgb(240, 235, 227); 
+  border-radius: 8px;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid transparent; 
+  outline: none;
+  background: rgb(240, 235, 227); 
+  padding: 15px;
+  color: rgb(87, 111, 114); 
+  font-size: 18px;
+  border-radius: 8px;
+  margin-bottom: 15px; 
+}
+
+form .btn2 {
+  padding: 14px 30px; 
+  font-size: 18px;
+  background-color: rgb(228, 220, 207); 
+  color: rgb(87, 111, 114); 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form .btn2:hover {
+  background-color: rgb(228, 220, 207);
 }
